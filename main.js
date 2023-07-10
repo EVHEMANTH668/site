@@ -65,13 +65,13 @@ let leaveAndRemoveLocalStream = async () => {
     for(let i = 0; localTracks.length > i; i++){
         localTracks[i].stop()
         localTracks[i].close()
+        window.open("index.html#home","_self")
     }
 
     await client.leave()
     document.getElementById('join-btn').style.display = 'block'
     document.getElementById('stream-controls').style.display = 'none'
     document.getElementById('video-streams').innerHTML = ''
-    window.open("index.html#home","_self")
 }
 
 let toggleMic = async (e) => {
