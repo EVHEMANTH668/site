@@ -717,6 +717,7 @@ header.mobile-header-2 .site-logo img {
 .desktop-header-3 .navbar-brand {
   padding-top: 0;
   padding-bottom: 0;
+  margin-right: 30px;
 }
 .desktop-header-3 .navbar-dark .navbar-nav .nav-link {
   color: #FFF;
@@ -2439,3 +2440,6 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+#navbar {
+  display:fixed;
+}

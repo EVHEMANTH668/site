@@ -1,5 +1,5 @@
 const APP_ID = "fefc08c342714fcaa1660ce49f3db3b2"
-const TOKEN = "007eJxTYAjUP5T8d/49mfdupXdVv17yK1smNXXxjYvbjVbH6i57tWS3AkNaalqygUWysYmRuaFJWnJioqGZmUFyqollmnFKknGSUSXTmpSGQEaG018vszAyMDKwADGIzwQmmcEkC5jkZnANC3F19lDwdXUNYWAAAM/JJwk="
+const TOKEN = "007eJxTYJh+q4R3R92lO8wGpzz/zHobsF80yq+qMkNTv9Us2nrt5xQFhrTUtGQDi2RjEyNzQ5O05MREQzMzg+RUE8s045Qk4ySjHyuXpTQEMjIsrfRnYmRgZGABYhCfCUwyg0kWMMnN4BoW4ursoeDr6hrCwAAAznQkVA=="
 const CHANNEL = "EVTECH MEET"
 
 const client = AgoraRTC.createClient({mode:'rtc', codec:'vp8'})
@@ -65,13 +65,13 @@ let leaveAndRemoveLocalStream = async () => {
     for(let i = 0; localTracks.length > i; i++){
         localTracks[i].stop()
         localTracks[i].close()
-        window.open("index.html#home","_self")
     }
 
     await client.leave()
     document.getElementById('join-btn').style.display = 'block'
     document.getElementById('stream-controls').style.display = 'none'
     document.getElementById('video-streams').innerHTML = ''
+    window.open("index.html#home","_self")
 }
 
 let toggleMic = async (e) => {
