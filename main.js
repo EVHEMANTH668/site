@@ -1,5 +1,5 @@
 const APP_ID = "fefc08c342714fcaa1660ce49f3db3b2"
-const TOKEN = "007eJxTYIi76rHhXeepZYyrFu3f5P7rsx3zhdWzInzOzum+VLn86JwcBYa01LRkA4tkYxMjc0OTtOTEREMzM4PkVBPLNOOUJOMko9iPn1MaAhkZNp39yMAIhCxADOIzgUlmMMkCJrkZXMNCXJ09FHxdXUMYGABKVCiN"
+const TOKEN = "007eJxTYIhn+ftVMk7h8JtmyyNbLpt8uvnuMKe/7luF3s44vnTNAzoKDGmpackGFsnGJkbmhiZpyYmJhmZmBsmpJpZpxilJxklGj95/S2kIZGTw757MysjAyMACxCA+E5hkBpMsYJKbwTUsxNXZQ8HX1TWEgQEAGhwlRg=="
 const CHANNEL = "EVTECH MEET"
 
 const client = AgoraRTC.createClient({mode:'rtc', codec:'vp8'})
